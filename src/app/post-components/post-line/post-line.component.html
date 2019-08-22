@@ -1,0 +1,4 @@
+<app-add-post id="addPostBlk" (saveEvent)="getPosts()"></app-add-post>
+<div class="postBlk">
+        <app-post *ngFor="let post of listOfPosts" [post]="post"></app-post>
+</div>

@@ -1,0 +1,39 @@
+<div class="post-container">
+  <mat-card class="post-card">
+    <div class="post-detail" *ngIf="viewState == 'ONLYVIEW'">
+      <small class="user-detail username">{{post?.createdBy | titlecase}} </small>
+      <small class="user-detail userTime">{{getPostedTime()}} Ago</small>
+    </div>
+    <mat-card-content class="post-content">
+      <p *ngIf="viewState == 'ONLYVIEW'">
+        {{post?.content}}
+      </p>
+      <textarea *ngIf="viewState == 'EDITVIEW' && isAuthor" type="text" autofocus="autofocus" id="addPostInput" rows="2"
+        placeholder="Write something here" [value]="content"></textarea>
+    </mat-card-content>
+
+    <mat-card-actions class="post-actions" *ngIf="viewState == 'ONLYVIEW'">
+      <!-- <div class="action">
+        <span> <i class="fa fa-heart-o" (click)="takeAction('LIKE')" *ngIf="!isLiked"></i> </span>
+        <span> <i class="fa fa-heart" (click)="takeAction('DISLIKE')" *ngIf="isLiked"></i> </span>
+        <span class="action-detail">5</span>
+      </div> -->
+      <div class="action" (click)="takeAction('SHOWCOMMENTS')">
+        <span><i class="fa fa-comment-o"></i></span>
+        <span class="action-detail">{{post?.comments?.length}}</span>
+      </div>
+
+      <small class="user-content-action" (click)="takeAction('EDIT')" *ngIf="isAuthor">Edit</small>
+      <small class="user-content-action" (click)="takeAction('DELETE')" *ngIf="isAuthor">Delete</small>
+    </mat-card-actions>
+    <mat-card-actions class="post-edit-actions" *ngIf="viewState == 'EDITVIEW' && isAuthor">
+      <small class="user-content-action" (click)="takeAction('SAVE')">Save</small>
+      <small class="user-content-action" (click)="takeAction('CANCEL')">Cancel</small>
+    </mat-card-actions>
+
+    <div class="comment-blk" *ngIf="showCommentBlk">
+      <app-add-comment [postId]="post?._id" (saveEvent)="viewComments()"></app-add-comment>
+      <app-comment *ngFor="let comment of post?.comments" [comment]="comment"></app-comment>
+    </div>
+  </mat-card>
+</div>

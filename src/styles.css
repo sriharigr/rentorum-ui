@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html {
+  /* height: 100%; */
+}
+
+body {
+  /* background-color: #dfeded !important; */
+}
+
+.mat-card {
+  /* border: 1px solid #2F4E4E !important; */
+  background-color: #ffffff !important;
+  outline: none;
+  border: none;
+}
+
+.formControl.mat-form-field-appearance-legacy .mat-form-field-underline,
+  .formControl.mat-form-field-appearance-legacy .mat-form-field-ripple,
+  .formControl.mat-form-field-appearance-legacy.mat-focused
+	.mat-form-field-underline,
+    .formControl.mat-form-field-appearance-legacy.mat-focused
+	.mat-form-field-ripple { 
+	background-color: white;
+}   
+.formControl.mat-form-field-appearance-legacy .mat-form-field-label,
+.formControl.mat-form-field-appearance-legacy.mat-focused
+	.mat-form-field-label {
+    color: white;  
+}
+
+/** Overrides caret & text color **/
+.formControl.mat-form-field-appearance-legacy .mat-input-element {
+	caret-color: white;
+  color: white;
+}
+.formControl.mat-form-field-appearance-legacy .mat-select-element {
+	caret-color: white;
+  color: white;
+}
+
+.formControl.mat-form-field-appearance-legacy .mat-select-arrow {
+	caret-color: white;
+  color: white;
+}
+.formControl.mat-form-field-appearance-legacy .mat-form-field-label{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formControl.mat-form-field-appearance-legacy .mat-form-field-infix {
+padding: .4375em 0 .13em 0;
+}
+
+#addPostInput, #addCommentInput, #addReplyInput {
+  resize: none;
+  width: 100%;
+  outline: none;
+  border-radius:10px;
+  padding:5px 5px 5px 8px;
+  font-size: 12px;
+  border: 1px solid lightgray;
+}
+
+#addCommentInput {
+  font-size: 12px;
+}
+
+.user-content-action {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  color:  #3973ac;
+}
+
+
+.user-detail {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.fa-arrow-circle-right {
+  position: absolute !important;
+  margin-top: 5px;
+  right: 25px !important;
+  color: grey;
+  }

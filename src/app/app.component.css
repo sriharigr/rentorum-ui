@@ -1,0 +1,40 @@
+.container-fluids {
+
+}
+ .login-footer {
+    padding: 20px;
+    border: 1px solid olive;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.header {
+    padding: 17px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Spectral SC', serif;
+    font-size: 20px;
+    background-color: #2F4E4E;
+}
+
+.footer {
+    padding: 17px;
+    border: 1px solid lightgray;
+    position: relative;
+    /* bottom: 0; */
+    width: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    /* margin-bottom: -50px; */
+  }
+/* container-fluids .footer, 
+.push {
+  height: 50px;
+} */

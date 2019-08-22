@@ -1,0 +1,22 @@
+.comment-container {
+    margin-left: 10px;
+}
+
+
+.comment-container p {
+    font-size: 15px;
+    margin-bottom: 2px !important;
+    font-family: 'Open Sans', sans-serif;
+    white-space: pre-line;
+}
+.comment-detail small {
+    padding-left: 0px !important;
+    margin-right: 10px;
+  }
+  .comment-detail .username {
+      font-weight: bold;
+  }
+  hr {
+    margin-top: 4px !important;
+    margin-bottom: 8px !important;
+}

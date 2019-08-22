@@ -1,0 +1,69 @@
+.post-container {
+margin-bottom: 10px;
+}
+.post-card {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+.mat-card-actions {
+ padding-left: 9px !important;   
+}
+
+.post-content p {
+    font-size: 15px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: pre-line;
+
+}
+
+.fa {
+    font-size: 15px;
+    cursor: pointer;
+}
+.fa-heart , .fa-heart-o {
+    color: #eb5959;
+}
+
+
+.post-detail small{
+    padding-left: 0px !important;
+    margin-right: 10px;
+  }
+  
+  .mat-card-actions {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+  }
+
+.post-actions .action {
+    margin-right: 10px;
+    display: inline;
+    cursor: pointer;
+}
+.post-actions .action:hover {
+    color: #999e9e;
+}
+.post-actions .action span {
+    margin-right: 6px;
+    display: inline;
+}
+
+.post-actions .action {
+color: #3c4142;
+font-size: 15px;
+}
+
+ .post-edit-actions small:hover{
+    text-decoration: underline;
+    text-underline-position: below;
+}
+hr {
+    margin-top: 4px !important;
+    margin-bottom: 8px !important;
+}
+#view-comment-blk {
+    margin-left: 10px;
+}

@@ -1,0 +1,4 @@
+<form [formGroup]="replyForm">
+    <textarea type="text" id="addReplyInput" rows="1" formControlName="content" placeholder="Type to Reply.." ></textarea>
+    <span><i class="fa fa-arrow-circle-right" matTooltip="Send" (click)="save()"></i></span>
+  </form>

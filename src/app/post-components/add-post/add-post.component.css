@@ -1,0 +1,30 @@
+.add-post-container {
+    margin-bottom: 5px;
+}
+
+
+
+.post-btn-blk {
+    padding: 0px 15px 0px 0px;
+}
+
+#postBtn {
+    text-align: center;
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 91%;
+    float: left;
+    border-radius: 15px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #postBtn {
+        width: 100%;
+    }
+    .post-btn-blk {
+        padding: 0px 15px 0px 15px;
+    }
+    
+
+}

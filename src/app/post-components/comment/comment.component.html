@@ -1,0 +1,12 @@
+<div class="comment-container">
+    <div class="comment-detail">
+        <small class="user-detail username">{{comment?.createdBy | titlecase}} </small>
+        <small class="user-detail userTime">{{getCommentedTime()}} Ago</small>
+      </div>
+    <p>{{comment?.content}}</p>
+    <small class="user-content-action" (click)="takeAction('SHOWCOMMENTS')">Reply</small> 
+    <small class="user-content-action" >Edit</small>
+    <app-add-reply *ngIf="showReplyBlk"></app-add-reply>
+    <hr>
+</div>
+

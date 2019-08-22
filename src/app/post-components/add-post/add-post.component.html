@@ -1,0 +1,13 @@
+<div class="add-post-container">
+  <form [formGroup]="postForm">
+    <div class="input-blk row">
+      <div class="sub-input-blk col-md-11">
+        <textarea type="text" autofocus="autofocus" id="addPostInput" formControlName="content" rows="2"
+          placeholder="Write something here"></textarea>
+      </div>
+      <div class="post-btn-blk col-md-1">
+        <button mat-button id="postBtn" (click)="save()">Post</button>
+      </div>
+    </div>
+  </form>
+</div>

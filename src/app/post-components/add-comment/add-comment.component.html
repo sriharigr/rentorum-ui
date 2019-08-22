@@ -1,0 +1,6 @@
+<div class="add-comment-container">
+    <form [formGroup]="commentForm">
+        <textarea type="text" id="addCommentInput" rows="1" formControlName="content" placeholder="Add Comment" ></textarea>
+        <span><i class="fa fa-arrow-circle-right" matTooltip="Send" (click)="save()"></i></span>
+      </form>
+</div>

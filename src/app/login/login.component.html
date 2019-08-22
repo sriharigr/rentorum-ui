@@ -1,0 +1,15 @@
+<div class="login-container">
+  <div class="login-blk">
+     <h2>Rentorum</h2>
+     <form [formGroup]="loginForm">
+ <div class="login-cred">
+      <mat-form-field class="formControl">
+          <input matInput placeholder="What do people call you?" formControlName="username"  autocomplete="off">
+        </mat-form-field>
+        <button class="loginBtn" type="button" (click)="login()" mat-raised-button>Login</button>
+  </div>
+  </form>
+    <h6>A RentAndMojo Company</h6>
+</div>
+
+</div>
